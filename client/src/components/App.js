@@ -1,7 +1,7 @@
 import React , {Component}from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import {connect} from 'react-redux'
-import * as actions from  '../actions/index.js';
+import * as actions from  '../actions';
 import Header from './Header'
 
 const Dashboard = () => <h2>Dashboard</h2>
@@ -29,3 +29,4 @@ class App extends Component{
 };
 
 export default connect(null, actions)(App);
+// once we done this connect we assign actions to APP as props
